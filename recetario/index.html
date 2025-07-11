@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Recetas de July</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'background': '#FDF8F5',
+                        'primary': '#EEDDCC',
+                        'secondary': '#B3A394',
+                        'accent': '#C8A2C8',
+                        'text-dark': '#4B3F38',
+                        'text-light': '#7F7065',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #FDF8F5;
+            color: #4B3F38;
+        }
+        .modal-content { max-height: 85vh; }
+
+        /* Estilos para Checklist */
+        .checklist-item {
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+        .checklist-item.completed {
+            text-decoration: line-through;
+            color: #B3A394; /* secondary color */
+            opacity: 0.8;
+        }
+
+        /* Estilos para Impresión */
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            #recipe-modal, #recipe-modal * {
+                visibility: visible;
+            }
+            #recipe-modal {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                box-shadow: none;
+                border: none;
+            }
+            .no-print {
+                display: none !important;
+            }
+            #modal-content-container, .modal-content {
+                border-radius: 0;
+                padding: 0;
+                overflow: visible;
+            }
+            h2, h3, h4 {
+                page-break-after: avoid;
+            }
+            * {
+                background: transparent !important;
+                color: black !important;
+                box-shadow: none !important;
+                text-shadow: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="text-center p-8 bg-background">
+        <h1 class="text-5xl font-bold text-text-dark tracking-tight">Las Recetas de July</h1>
+        <p class="text-text-light mt-2">Tu colección de recetas, curada para chefs.</p>
+    </header>
+
+    <main class="container mx-auto px-4 md:px-8 pb-16">
+        <div class="mb-10 sticky top-4 z-10">
+            <input type="text" id="search-bar" placeholder="Buscar por nombre o ingrediente..." class="w-full p-4 rounded-lg border-2 border-primary bg-white focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent shadow-sm transition-shadow duration-300">
+        </div>
+        <div id="recipe-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"></div>
+        <p id="no-results" class="text-center text-text-light text-xl hidden">No se encontraron recetas.</p>
+    </main>
+
+    <div id="recipe-modal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 z-50 hidden backdrop-blur-sm">
+        <div id="modal-content-container" class="bg-background rounded-2xl shadow-2xl w-full max-w-3xl transform transition-all duration-300 scale-95 opacity-0">
+            
+            <div class="p-6 sm:p-8 flex justify-between items-start no-print">
+                <div class="flex flex-wrap gap-2">
+                    <button id="cook-mode-btn" class="bg-accent text-white px-4 py-2 rounded-lg font-bold hover:bg-accent/80 transition-colors flex items-center gap-2">
+                        <ion-icon name="restaurant-outline"></ion-icon> Modo Cocina
+                    </button>
+                    <button id="print-btn" class="bg-secondary text-white px-4 py-2 rounded-lg font-bold hover:bg-secondary/80 transition-colors flex items-center gap-2">
+                        <ion-icon name="print-outline"></ion-icon> Imprimir
+                    </button>
+                </div>
+                <button id="close-modal-btn" class="bg-primary text-text-dark rounded-full h-10 w-10 flex items-center justify-center shadow-lg hover:bg-accent hover:text-white transition-colors flex-shrink-0">
+                    <ion-icon name="close-outline" class="text-2xl"></ion-icon>
+                </button>
+            </div>
+
+            <div class="modal-content px-6 sm:px-8 pb-8 overflow-y-auto">
+                <h2 id="modal-title" class="text-4xl font-bold text-text-dark mb-4"></h2>
+                <div id="modal-info-bar" class="flex flex-wrap gap-4 text-text-light mb-8 p-4 bg-primary/30 rounded-lg">
+                    <div id="modal-cook-time" class="flex items-center gap-2"><ion-icon name="time-outline" class="text-xl text-secondary"></ion-icon><span></span></div>
+                    <div id="modal-temperature" class="flex items-center gap-2"><ion-icon name="thermometer-outline" class="text-xl text-secondary"></ion-icon><span></span></div>
+                    <div id="modal-yields" class="flex items-center gap-2"><ion-icon name="restaurant-outline" class="text-xl text-secondary"></ion-icon><span></span></div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold text-text-dark border-b-2 border-primary pb-2 mb-4">Ingredientes</h3>
+                    <div id="modal-ingredients" class="space-y-4"></div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-text-dark border-b-2 border-primary pb-2 mb-4">Instrucciones</h3>
+                    <div id="modal-instructions" class="space-y-3 text-text-light leading-relaxed"></div>
+                </div>
+                
+                <div id="modal-notes-container" class="mt-8 hidden">
+                    <h3 class="text-2xl font-bold text-text-dark border-b-2 border-primary pb-2 mb-4">Notas</h3>
+                    <ul id="modal-notes" class="list-disc list-inside bg-primary/20 p-4 rounded-lg text-text-light space-y-1"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cook-mode-modal" class="fixed inset-0 bg-background z-50 hidden flex-col items-center justify-center p-4">
+        <div class="w-full max-w-4xl text-center flex-grow flex flex-col justify-center">
+            <p id="cook-mode-step-indicator" class="text-2xl text-secondary font-bold mb-4"></p>
+            <p id="cook-mode-step-text" class="text-4xl md:text-6xl font-light text-text-dark"></p>
+        </div>
+        <div class="w-full max-w-4xl flex justify-between items-center p-4">
+            <button id="cook-mode-prev" class="bg-primary text-text-dark px-6 py-3 rounded-lg font-bold hover:bg-primary/80 transition-colors text-xl">Anterior</button>
+            <button id="cook-mode-exit" class="text-text-light hover:text-text-dark font-bold">Salir del Modo Cocina</button>
+            <button id="cook-mode-next" class="bg-primary text-text-dark px-6 py-3 rounded-lg font-bold hover:bg-primary/80 transition-colors text-xl">Siguiente</button>
+        </div>
+    </div>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- 1. REFERENCIAS A ELEMENTOS DEL DOM ---
+        const recipeGrid = document.getElementById('recipe-grid');
+        const searchBar = document.getElementById('search-bar');
+        const noResults = document.getElementById('no-results');
+        
+        // Modal principal
+        const modal = document.getElementById('recipe-modal');
+        const modalContentContainer = document.getElementById('modal-content-container');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const printBtn = document.getElementById('print-btn');
+        const cookModeBtn = document.getElementById('cook-mode-btn');
+
+        // Modal Modo Cocina
+        const cookModeModal = document.getElementById('cook-mode-modal');
+        const cookModeExitBtn = document.getElementById('cook-mode-exit');
+        const cookModePrevBtn = document.getElementById('cook-mode-prev');
+        const cookModeNextBtn = document.getElementById('cook-mode-next');
+        const cookModeStepText = document.getElementById('cook-mode-step-text');
+        const cookModeStepIndicator = document.getElementById('cook-mode-step-indicator');
+
+        // --- 2. ESTADO DE LA APLICACIÓN ---
+        let allRecipes = []; 
+        let currentRecipe = null;
+        let wakeLock = null;
+        let cookModeStep = 0;
+
+        // --- 3. LÓGICA DE CARGA DE DATOS ---
+        fetch('recetas.json')
+            .then(response => response.ok ? response.json() : Promise.reject(response.statusText))
+            .then(data => {
+                allRecipes = data.recipes;
+                displayRecipes(allRecipes);
+                setupEventListeners();
+            })
+            .catch(error => {
+                console.error('Error al cargar las recetas:', error);
+                recipeGrid.innerHTML = `<p class="text-center text-red-500 col-span-full">No se pudieron cargar las recetas.</p>`;
+            });
+
+        // --- 4. FUNCIONES ---
+        function displayRecipes(recipesToShow) {
+            recipeGrid.innerHTML = '';
+            noResults.classList.toggle('hidden', recipesToShow.length > 0);
+            
+            recipesToShow.forEach(recipe => {
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-xl shadow-md overflow-hidden cursor-pointer transform hover:-translate-y-1 transition-all duration-300 hover:shadow-xl';
+                card.dataset.id = recipe.id;
+                card.innerHTML = `<div class="p-6"><h3 class="text-2xl font-bold text-text-dark">${recipe.name}</h3><div class="flex items-center mt-4 text-sm text-text-light"><ion-icon name="time-outline" class="mr-2 text-secondary"></ion-icon><span>${recipe.cookInfo.time}</span></div></div>`;
+                recipeGrid.appendChild(card);
+            });
+        }
+        
+        function showRecipeDetails(recipeId) {
+            currentRecipe = allRecipes.find(r => r.id === recipeId);
+            if (!currentRecipe) return;
+
+            // Llenar datos
+            document.getElementById('modal-title').textContent = currentRecipe.name;
+            document.getElementById('modal-cook-time').children[1].textContent = currentRecipe.cookInfo.time || 'N/A';
+            document.getElementById('modal-temperature').children[1].textContent = currentRecipe.cookInfo.temperature || 'N/A';
+            
+            const yieldsEl = document.getElementById('modal-yields');
+            yieldsEl.classList.toggle('hidden', !currentRecipe.yields);
+            if (currentRecipe.yields) yieldsEl.children[1].textContent = currentRecipe.yields;
+
+            // Checklist de Ingredientes
+            document.getElementById('modal-ingredients').innerHTML = currentRecipe.ingredientGroups.map(group => `
+                <div>
+                    <h4 class="text-xl font-bold text-secondary mb-2">${group.groupName}</h4>
+                    <ul class="list-none space-y-1">
+                        ${group.ingredients.map(ing => `
+                            <li class="flex items-start checklist-item">
+                                <span class="text-accent mr-2 mt-1">•</span>
+                                <div>
+                                    <span class="text-text-dark">${ing.name}:</span>
+                                    <span class="font-bold text-text-light ml-2">${ing.quantity} ${ing.unit || ''}</span>
+                                </div>
+                            </li>`).join('')}
+                    </ul>
+                </div>`).join('');
+
+            // Checklist de Instrucciones
+            document.getElementById('modal-instructions').innerHTML = `<ol class="list-decimal list-inside space-y-3">${currentRecipe.instructions.map(step => `<li class="checklist-item">${step}</li>`).join('')}</ol>`;
+            
+            // Notas
+            const notesContainer = document.getElementById('modal-notes-container');
+            notesContainer.classList.toggle('hidden', !currentRecipe.notes || currentRecipe.notes.length === 0);
+            if (currentRecipe.notes && currentRecipe.notes.length > 0) {
+                document.getElementById('modal-notes').innerHTML = currentRecipe.notes.map(note => `<li>${note}</li>`).join('');
+            }
+
+            openModal();
+        }
+        
+        function openModal() {
+            modal.classList.remove('hidden');
+            setTimeout(() => modalContentContainer.classList.remove('scale-95', 'opacity-0'), 10);
+        }
+
+        function closeModal() {
+            modalContentContainer.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+
+        // --- Funciones de Modo Cocina ---
+        async function startCookMode() {
+            if (!currentRecipe) return;
+            closeModal();
+            cookModeModal.classList.remove('hidden');
+            cookModeStep = 0;
+            updateCookModeView();
+
+            try {
+                if ('wakeLock' in navigator) {
+                    wakeLock = await navigator.wakeLock.request('screen');
+                    console.log('Wake Lock está activo.');
+                }
+            } catch (err) {
+                console.error(`${err.name}, ${err.message}`);
+            }
+        }
+
+        function updateCookModeView() {
+            cookModeStepIndicator.textContent = `Paso ${cookModeStep + 1} de ${currentRecipe.instructions.length}`;
+            cookModeStepText.textContent = currentRecipe.instructions[cookModeStep];
+            cookModePrevBtn.disabled = cookModeStep === 0;
+            cookModeNextBtn.disabled = cookModeStep === currentRecipe.instructions.length - 1;
+            cookModePrevBtn.classList.toggle('opacity-50', cookModePrevBtn.disabled);
+            cookModeNextBtn.classList.toggle('opacity-50', cookModeNextBtn.disabled);
+        }
+
+        function exitCookMode() {
+            cookModeModal.classList.add('hidden');
+            openModal();
+            if (wakeLock) {
+                wakeLock.release().then(() => {
+                    wakeLock = null;
+                    console.log('Wake Lock liberado.');
+                });
+            }
+        }
+
+        // --- 5. MANEJADORES DE EVENTOS ---
+        function setupEventListeners() {
+            searchBar.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const filtered = allRecipes.filter(r => 
+                    r.name.toLowerCase().includes(searchTerm) ||
+                    r.ingredientGroups.some(g => g.ingredients.some(i => i.name.toLowerCase().includes(searchTerm)))
+                );
+                displayRecipes(filtered);
+            });
+            
+            recipeGrid.addEventListener('click', e => e.target.closest('[data-id]') && showRecipeDetails(e.target.closest('[data-id]').dataset.id));
+            
+            // Eventos del Modal Principal
+            closeModalBtn.addEventListener('click', closeModal);
+            modal.addEventListener('click', e => e.target === modal && closeModal());
+            document.addEventListener('keydown', e => e.key === 'Escape' && !modal.classList.contains('hidden') && closeModal());
+            printBtn.addEventListener('click', () => window.print());
+            cookModeBtn.addEventListener('click', startCookMode);
+
+            // Eventos del Checklist
+            modal.addEventListener('click', e => e.target.closest('.checklist-item')?.classList.toggle('completed'));
+
+            // Eventos de Modo Cocina
+            cookModeExitBtn.addEventListener('click', exitCookMode);
+            cookModeNextBtn.addEventListener('click', () => {
+                if (cookModeStep < currentRecipe.instructions.length - 1) {
+                    cookModeStep++;
+                    updateCookModeView();
+                }
+            });
+            cookModePrevBtn.addEventListener('click', () => {
+                if (cookModeStep > 0) {
+                    cookModeStep--;
+                    updateCookModeView();
+                }
+            });
+        }
+    });
+    </script>
+</body>
+</html>
