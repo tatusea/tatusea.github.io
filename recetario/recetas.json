@@ -1,48 +1,38 @@
 {
   "recipes": [
     {
-      "id": "tarta-de-ricota",
-      "name": "Tarta de Ricota",
-      "yields": null,
+      "id": "brownie",
+      "name": "Brownie",
+      "yields": "Molde de 30x45 cm",
       "cookInfo": {
-        "time": "60-80 minutos",
+        "time": "30 minutos aprox.",
         "temperature": "180°C"
       },
       "ingredientGroups": [
         {
-          "groupName": "Masa",
+          "groupName": "General",
           "ingredients": [
-            { "name": "Manteca", "quantity": 200, "unit": "g" },
-            { "name": "Azúcar impalpable", "quantity": 140, "unit": "g" },
-            { "name": "Harina leudante", "quantity": 400, "unit": "g" },
-            { "name": "Huevos", "quantity": 2, "unit": "unidades" },
-            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" }
-          ]
-        },
-        {
-          "groupName": "Relleno",
-          "ingredients": [
-            { "name": "Ricota", "quantity": 500, "unit": "g" },
-            { "name": "Azúcar", "quantity": 200, "unit": "g" },
-            { "name": "Ralladura de limón", "quantity": "c/n", "unit": "" },
-            { "name": "Huevos", "quantity": 2, "unit": "unidades" },
-            { "name": "Fécula de maíz", "quantity": 50, "unit": "g" },
-            { "name": "Leche", "quantity": "2", "unit": "cucharadas" }
+            { "name": "Manteca", "quantity": 250, "unit": "g" },
+            { "name": "Chocolate", "quantity": 200, "unit": "g" },
+            { "name": "Cacao", "quantity": 60, "unit": "g" },
+            { "name": "Azúcar", "quantity": 250, "unit": "g" },
+            { "name": "Huevos", "quantity": 4, "unit": "unidades" },
+            { "name": "Harina", "quantity": 170, "unit": "g" },
+            { "name": "Sal", "quantity": "1 pizca", "unit": "" },
+            { "name": "Bicarbonato de sodio", "quantity": "1/2", "unit": "cucharadita" }
           ]
         }
       ],
       "instructions": [
-        "Realizar un 'arenado' con la harina, el azúcar y la manteca bien fría. Se puede hacer en procesadora o en un bol con tenedor y espátula para no dar calor con las manos.",
-        "Agregar al arenado los huevos y la vainilla hasta formar la masa sin amasar.",
-        "Dejar reposar en la heladera al menos 30 minutos.",
-        "Para el relleno: mezclar o batir la ricota con la ralladura de limón, el azúcar y los huevos. Luego, agregar la fécula de maíz desleída con dos cucharadas de leche.",
-        "Retirar la masa de la heladera, dividirla en una proporción 60/40. Usar la parte más grande para forrar (fonzar) la base de la tartera.",
-        "Volcar el relleno y tapar con la masa restante.",
-        "Llevar a horno precalentado a 180° (mínimo) por 60 a 80 minutos.",
-        "Dejar enfriar en el horno, desmoldar y espolvorear con azúcar impalpable."
+        "En un bol colocar el chocolate y calentar levemente a baño maría o en microondas cuidando de no quemarlo, derretir la manteca y volcarla caliente por encima del chocolate, mezclar con matador de mano hasta integrar.",
+        "En un recipiente aparte mezclar los huevos con el azúcar, e integrar las dos preparaciones con batidor de mano.",
+        "Mezclar la harina con el cacao, el bicarbonato y la sal, tamizar, e incorporar de a poco en la preparación de chocolate con batidor de mano, hasta que quede una masa homogénea, agregar los frutos secos picados.",
+        "En una placa de 30x45, volcar la preparación y distribuir con una espátula uniformemente, y por encima esparcir algunos frutos secos picados.",
+        "Llevar a horno precalentado a 180° por 30 minutos aproximadamente.",
+        "Retirar, dejar enfriar, cortar los bordes, y decorar con hilos de chocolate por encima, cortar del tamaño deseado."
       ],
       "notes": [
-        "Para el relleno, usar preferentemente ricota cremosa."
+        "Opcional: frutos secos picados a gusto."
       ]
     },
     {
@@ -80,249 +70,6 @@
       "notes": [
         "Las semillas de amapola son opcionales.",
         "Se puede usar harina leudante o harina común con polvo para hornear."
-      ]
-    },
-    {
-      "id": "tarta-de-ciruelas",
-      "name": "Tarta de Ciruelas",
-      "yields": null,
-      "cookInfo": {
-        "time": "50-60 minutos",
-        "temperature": "180-200°C"
-      },
-      "ingredientGroups": [
-        {
-          "groupName": "Masa",
-          "ingredients": [
-            { "name": "Manteca blanca", "quantity": 200, "unit": "g" },
-            { "name": "Azúcar", "quantity": 200, "unit": "g" },
-            { "name": "Huevos", "quantity": 4, "unit": "unidades" },
-            { "name": "Harina leudante", "quantity": 250, "unit": "g" }
-          ]
-        },
-        {
-          "groupName": "Crumble",
-          "ingredients": [
-            { "name": "Azúcar", "quantity": "c/n", "unit": "cucharadas" },
-            { "name": "Manteca fría", "quantity": "40-50", "unit": "g" },
-            { "name": "Harina", "quantity": "3-4", "unit": "cucharadas" },
-            { "name": "Fruto seco", "quantity": "a gusto", "unit": "" }
-          ]
-        },
-        {
-          "groupName": "Relleno",
-          "ingredients": [
-            { "name": "Ciruelas", "quantity": 500, "unit": "g" },
-            { "name": "Jugo de limón", "quantity": "unas gotitas", "unit": "" },
-            { "name": "Azúcar", "quantity": "1 pizca", "unit": "" }
-          ]
-        }
-      ],
-      "instructions": [
-        "Ciruelas: Cortar en gajos y saltear en una sartén con unas gotitas de jugo de limón y una pizca de azúcar. Reservar.",
-        "Crumble: Realizar un arenado con los ingredientes del crumble, usando un tenedor, espátula o procesadora.",
-        "Masa: Batir la manteca con el azúcar hasta homogeneizar. Agregar los huevos de a uno y finalmente la harina tamizada en partes, batiendo hasta formar una masa homogénea, un poco más densa que la de un bizcochuelo común.",
-        "En un molde enmantecado o con papel manteca, volcar y distribuir la masa de forma pareja.",
-        "Agregar las ciruelas por encima y cubrir toda la superficie con el crumble.",
-        "Llevar a horno mínimo precalentado (180-200°C) por 50 a 60 minutos aproximadamente."
-      ],
-      "notes": []
-    },
-    {
-      "id": "pasta-frola",
-      "name": "Pasta Frola",
-      "yields": null,
-      "cookInfo": {
-        "time": "60 minutos aprox.",
-        "temperature": "180°C"
-      },
-      "ingredientGroups": [
-        {
-          "groupName": "Masa",
-          "ingredients": [
-            { "name": "Manteca", "quantity": 200, "unit": "g" },
-            { "name": "Azúcar", "quantity": 180, "unit": "g" },
-            { "name": "Huevos", "quantity": 2, "unit": "unidades" },
-            { "name": "Harina leudante", "quantity": 450, "unit": "g" },
-            { "name": "Sal", "quantity": "1 pizca", "unit": "" },
-            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" },
-            { "name": "Ralladura de limón", "quantity": "c/n", "unit": "" }
-          ]
-        },
-        {
-          "groupName": "Relleno",
-          "ingredients": [
-            { "name": "Dulce de membrillo", "quantity": 300, "unit": "g" },
-            { "name": "Oporto", "quantity": "c/n", "unit": "" }
-          ]
-        }
-      ],
-      "instructions": [
-        "Batir la manteca con el azúcar hasta blanquear. Agregar huevos, ralladura y esencia.",
-        "Agregar la harina tamizada de a poco e incorporar con espátula. Terminar de unir la masa en la mesada con un cornet, sin usar las manos para no darle calor.",
-        "Dejar reposar la masa tapada en la heladera durante al menos 1 hora.",
-        "Para el relleno, calentar el dulce de membrillo en una ollita con el oporto para ablandarlo e integrarlo bien. Dejar enfriar.",
-        "Dividir la masa en una proporción 80/20. Forrar (fonzar) un molde de tarta con la porción más grande.",
-        "Esparcir el dulce de membrillo uniformemente.",
-        "Con el resto de la masa, realizar tiritas y colocarlas para formar el clásico enrejado.",
-        "Hornear por aproximadamente 60 minutos en horno precalentado a 180°C."
-      ],
-      "notes": []
-    },
-    {
-      "id": "tarta-de-manzana",
-      "name": "Tarta de manzana",
-      "yields": null,
-      "cookInfo": {
-        "time": "40-50 minutos",
-        "temperature": "200°C"
-      },
-      "ingredientGroups": [
-        {
-          "groupName": "General",
-          "ingredients": [
-            { "name": "Manteca", "quantity": 120, "unit": "g" },
-            { "name": "Azúcar", "quantity": 120, "unit": "g" },
-            { "name": "Harina leudante", "quantity": 240, "unit": "g" },
-            { "name": "Huevos", "quantity": 2, "unit": "unidades" },
-            { "name": "Leche ácida", "quantity": 250, "unit": "g" },
-            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" },
-            { "name": "Manzanas", "quantity": "4-5", "unit": "unidades" },
-            { "name": "Canela", "quantity": "c/n", "unit": "" }
-          ]
-        }
-      ],
-      "instructions": [
-        "Granulado: Mezclar con tenedor, cornet o procesadora, la manteca fría, el azúcar y la harina hasta formar un granulado. Dividirlo 60/40.",
-        "Manzanas: En una sartén, dorar las manzanas cortadas a gusto con una cucharada de azúcar y canela a gusto.",
-        "Batido: Batir a mano los huevos con la leche y la esencia de vainilla.",
-        "Armado: Con la parte más grande del granulado, forrar y presionar la base de una tartera (no desmontable).",
-        "Acomodar las manzanas sobre la base y volcar el batido líquido sobre ellas.",
-        "Esparcir el resto del granulado por encima sin aplastar.",
-        "Cocción: Colocar la tartera en una placa y llevar a horno precalentado a 200°C por 40-50 minutos."
-      ],
-      "notes": []
-    },
-    {
-      "id": "tarta-de-dulce-de-leche-y-coco",
-      "name": "Tarta de Dulce de Leche y Coco",
-      "yields": null,
-      "cookInfo": {
-        "time": "30-40 minutos",
-        "temperature": "200°C"
-      },
-      "ingredientGroups": [
-        {
-          "groupName": "Masa",
-          "ingredients": [
-            { "name": "Manteca", "quantity": 150, "unit": "g" },
-            { "name": "Azúcar impalpable", "quantity": 100, "unit": "g" },
-            { "name": "Leche", "quantity": 50, "unit": "g" },
-            { "name": "Huevos", "quantity": 2, "unit": "unidades" },
-            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" },
-            { "name": "Sal", "quantity": "1 pizca", "unit": "" }
-          ]
-        },
-        {
-          "groupName": "Relleno",
-          "ingredients": [
-            { "name": "Dulce de leche", "quantity": 250, "unit": "g" }
-          ]
-        },
-        {
-          "groupName": "Cocada",
-          "ingredients": [
-            { "name": "Coco rallado", "quantity": "300-400", "unit": "g" },
-            { "name": "Huevo", "quantity": 1, "unit": "unidad" },
-            { "name": "Azúcar", "quantity": 100, "unit": "g" },
-            { "name": "Crema de leche", "quantity": 50, "unit": "g" }
-          ]
-        }
-      ],
-      "instructions": [
-        "Masa: Cremar la manteca con el azúcar y la sal. Agregar el huevo y la leche, y mezclar enérgicamente. Integrar de a poco la harina tamizada con espátula y agregar la esencia. Unir sin amasar y dejar reposar en la heladera tapada por al menos una hora.",
-        "Cocada: En un bol, mezclar el coco y el azúcar. Hacer un hueco y agregar el huevo y la crema de leche. Mezclar hasta integrar.",
-        "Armado: Forrar (fonzar) la base de una tartera con la masa y pinchar con tenedor. Cocinar hasta blanquear en horno mínimo con papel aluminio y peso encima (precocción).",
-        "Retirar el peso y el papel, esparcir el dulce de leche, y por encima volcar la cocada.",
-        "Cocinar en horno precalentado a 200°C por 30-40 minutos."
-      ],
-      "notes": [
-        "La cocada se puede desparramar o aplicar con manga de repostería para hacer copitos."
-      ]
-    },
-    {
-      "id": "cuadraditos-de-limon",
-      "name": "Cuadraditos de Limón",
-      "yields": "Molde cuadrado de 25cm",
-      "cookInfo": {
-        "time": "15 minutos aprox. (masa)",
-        "temperature": "200°C"
-      },
-      "ingredientGroups": [
-        {
-          "groupName": "Masa",
-          "ingredients": [
-            { "name": "Manteca", "quantity": 100, "unit": "g" },
-            { "name": "Azúcar", "quantity": 200, "unit": "g" },
-            { "name": "Harina", "quantity": 300, "unit": "g" },
-            { "name": "Yema", "quantity": 1, "unit": "unidad" },
-            { "name": "Ralladura de limón", "quantity": "c/n", "unit": "" },
-            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" }
-          ]
-        },
-        {
-          "groupName": "Crema de limón",
-          "ingredients": [
-            { "name": "Azúcar", "quantity": 80, "unit": "g" },
-            { "name": "Jugo de limón", "quantity": 1, "unit": "unidad" },
-            { "name": "Yemas", "quantity": 2, "unit": "unidades" },
-            { "name": "Leche", "quantity": 140, "unit": "g" },
-            { "name": "Maicena", "quantity": 30, "unit": "g" }
-          ]
-        }
-      ],
-      "instructions": [
-        "Masa: En procesadora, arenar manteca, azúcar y harina. Agregar la yema, ralladura y vainilla, y procesar hasta unir. Reservar en heladera.",
-        "Estirar la masa del tamaño del molde, pinchar, colocar papel aluminio con peso y hornear a 200°C por 15 minutos. Sacar el papel y terminar de dorar.",
-        "Crema: Calentar la leche con la mitad del azúcar, jugo y ralladura. Aparte, mezclar la maicena con el azúcar restante y las yemas. Unir ambas preparaciones en la olla y cocinar hasta que espese.",
-        "Armado: En el mismo molde, colocar film, luego la masa cocida, y esparcir la crema de limón. Tapar con film y llevar a la heladera, preferentemente de un día para el otro.",
-        "Desmoldar y cortar en cuadraditos."
-      ],
-      "notes": [
-        "Opcional para la crema: agregar 30g de manteca en cubos al final para suavizar.",
-        "Opcional para decorar: merengue suizo o crema chantilly."
-      ]
-    },
-    {
-      "id": "crackers",
-      "name": "Crackers",
-      "yields": null,
-      "cookInfo": {
-        "time": "10-15 minutos",
-        "temperature": "250°C"
-      },
-      "ingredientGroups": [
-        {
-          "groupName": "General",
-          "ingredients": [
-            { "name": "Harina 0000", "quantity": 100, "unit": "g" },
-            { "name": "Harina de avena", "quantity": 40, "unit": "g" },
-            { "name": "Harina integral o de semillas", "quantity": 30, "unit": "g" },
-            { "name": "Sal", "quantity": 5, "unit": "g" },
-            { "name": "Agua", "quantity": 100, "unit": "g" },
-            { "name": "Aceite", "quantity": 30, "unit": "g" }
-          ]
-        }
-      ],
-      "instructions": [
-        "En un bol, mezclar todos los secos. Hacer un hueco y agregar el agua y el aceite. Mezclar hasta formar una masa.",
-        "Amasar sobre la mesada hasta obtener una masa lisa.",
-        "Estirar la masa bien finita, cortar de la forma deseada.",
-        "Hornear en horno precalentado a 250°C (medio) durante 10-15 minutos."
-      ],
-      "notes": [
-        "Opcional: agregar mix de semillas a gusto.",
-        "Opcional: agregar mix de hierbas (perejil seco, orégano, tomillo)."
       ]
     },
     {
@@ -370,40 +117,36 @@
       ]
     },
     {
-      "id": "brownie",
-      "name": "Brownie",
-      "yields": "Molde de 30x45 cm",
+      "id": "cookies-clasicas",
+      "name": "Cookies Clásicas",
+      "yields": null,
       "cookInfo": {
         "time": "30 minutos aprox.",
-        "temperature": "180°C"
+        "temperature": "200°C"
       },
       "ingredientGroups": [
         {
           "groupName": "General",
           "ingredients": [
-            { "name": "Manteca", "quantity": 250, "unit": "g" },
-            { "name": "Chocolate", "quantity": 200, "unit": "g" },
-            { "name": "Cacao", "quantity": 60, "unit": "g" },
-            { "name": "Azúcar", "quantity": 250, "unit": "g" },
-            { "name": "Huevos", "quantity": 4, "unit": "unidades" },
-            { "name": "Harina", "quantity": 170, "unit": "g" },
-            { "name": "Sal", "quantity": "1 pizca", "unit": "" },
-            { "name": "Bicarbonato de sodio", "quantity": "1/2", "unit": "cucharadita" }
+            { "name": "Manteca", "quantity": 150, "unit": "g" },
+            { "name": "Azúcar", "quantity": 150, "unit": "g" },
+            { "name": "Huevo", "quantity": 1, "unit": "unidad" },
+            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" },
+            { "name": "Leche ácida", "quantity": 20, "unit": "g" },
+            { "name": "Harina", "quantity": 250, "unit": "g" },
+            { "name": "Polvo de hornear", "quantity": 1, "unit": "cucharadita" },
+            { "name": "Bicarbonato de sodio", "quantity": "1/2", "unit": "cdita" },
+            { "name": "Confites o chips de chocolate", "quantity": "c/n", "unit": "" }
           ]
         }
       ],
       "instructions": [
-        "Derretir el chocolate a baño maría o en microondas con cuidado. Derretir la manteca y volcarla caliente sobre el chocolate, mezclando hasta integrar.",
-        "Aparte, mezclar los huevos con el azúcar. Integrar con la preparación de chocolate.",
-        "Tamizar juntos la harina, el cacao, el bicarbonato y la sal. Incorporar de a poco a la mezcla húmeda hasta obtener una masa homogénea.",
-        "Agregar frutos secos picados si se desea.",
-        "Volcar la preparación en una placa de 30x45 y distribuir uniformemente.",
-        "Hornear a 180°C por 30 minutos.",
-        "Retirar, dejar enfriar y decorar con hilos de chocolate antes de cortar."
+        "Cremar la manteca con el azúcar y la esencia de vainilla, agregar el huevo y la leche ácida, cambiar batidor por espátula para incorporar los secos tamizados de a poco, y finalmente parte de los confites de chocolate.",
+        "Armar bolitas con la masa, aplanar levemente y colocar en una placa con papel manteca y llevar a frio (heladera o freezer), precalentar el horno a 200°.",
+        "Sacar del frío, y en la superficie poner algunos confites de cada cookie, llevar la placa al horno y cocinar durante 15 minutos, girar la bandeja para una cocción más pareja y dejar otros 15 minutos aproximadamente.",
+        "Sacar del horno y dejar enfriar en rejilla."
       ],
-      "notes": [
-        "Opcional: agregar frutos secos picados a gusto."
-      ]
+      "notes": []
     },
     {
       "id": "cookies-red-velvet",
@@ -425,140 +168,53 @@
             { "name": "Cacao amargo", "quantity": 15, "unit": "g" },
             { "name": "Harina 0000", "quantity": 250, "unit": "g" },
             { "name": "Sal", "quantity": "1 pizca", "unit": "" },
-            { "name": "Bicarbonato de sodio", "quantity": "1/2", "unit": "cucharadita" },
+            { "name": "Bicarbonato de sodio", "quantity": "1/2", "unit": "cdita" },
             { "name": "Polvo para hornear", "quantity": 1, "unit": "cucharadita" },
-            { "name": "Chocolate blanco en chips", "quantity": "c/n", "unit": "" }
+            { "name": "Chocolate blanco en chips o picado", "quantity": "c/n", "unit": "" }
           ]
         }
       ],
       "instructions": [
-        "Batir la manteca con el azúcar hasta cremar. Agregar el huevo y el colorante e integrar.",
-        "Incorporar de a poco el cacao tamizado y la leche ácida.",
-        "Mezclar la harina con la sal, bicarbonato y polvo de hornear. Añadir de a poco a la preparación anterior con espátula hasta obtener una masa blanda. Agregar parte del chocolate.",
-        "Formar bolitas, colocarlas en una placa y llevar al freezer o heladera.",
-        "Precalentar el horno a 200°C.",
-        "Retirar las bolitas del frío, aplastarlas levemente y pasar la parte superior por el chocolate reservado.",
-        "Hornear por 15 minutos. Al retirar, colocar en una rejilla para enfriar."
+        "Batir la manteca con el azúcar y cremar, agregar el huevo y el colorante hasta integrar, de a poco incorporar el cacao tamizado y la leche ácida.",
+        "Mezclar la harina con la sal, el bicarbonato y el polvo, y añadir de a poco y con espátula a la preparación de manteca, hasta obtener una masa blanda pero manejable con las manos, agregar parte del chocolate, reservar el resto.",
+        "Con la masa formar bolitas del tamaño elegido, y colocarlas separadamente en una placa, cubierta con placa siliconada o papel manteca, y llevar al freezer o heladera.",
+        "Mientras, precalentar el horno a 200° (mínimo).",
+        "Sacar de la heladera, aplastar levemente las bolitas, y pasar la parte superior por el chocolate reservado, para que quede en la superficie.",
+        "Llevar a horno por 15 minutos aproximadamente, hasta el punto de cocción deseado (más blando o más seco).",
+        "Retirar del horno y colocar las cookies en una rejilla de repostería para enfriar."
       ],
       "notes": []
     },
     {
-      "id": "cookies-clasicas",
-      "name": "Cookies Clásicas",
+      "id": "crackers",
+      "name": "Crackers",
       "yields": null,
       "cookInfo": {
-        "time": "30 minutos aprox.",
-        "temperature": "200°C"
+        "time": "10-15 minutos",
+        "temperature": "250°C"
       },
       "ingredientGroups": [
         {
           "groupName": "General",
           "ingredients": [
-            { "name": "Manteca", "quantity": 150, "unit": "g" },
-            { "name": "Azúcar", "quantity": 150, "unit": "g" },
-            { "name": "Huevo", "quantity": 1, "unit": "unidad" },
-            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" },
-            { "name": "Leche ácida", "quantity": 20, "unit": "g" },
-            { "name": "Harina", "quantity": 250, "unit": "g" },
-            { "name": "Polvo de hornear", "quantity": 1, "unit": "cucharadita" },
-            { "name": "Bicarbonato de sodio", "quantity": "1.5", "unit": "cucharadita" },
-            { "name": "Confites o chips de chocolate", "quantity": "c/n", "unit": "" }
+            { "name": "Harina 0000", "quantity": 100, "unit": "g" },
+            { "name": "Harina de avena", "quantity": 40, "unit": "g" },
+            { "name": "Harina integral o de semillas", "quantity": 30, "unit": "g" },
+            { "name": "Sal", "quantity": 5, "unit": "g" },
+            { "name": "Agua", "quantity": 100, "unit": "g" },
+            { "name": "Aceite", "quantity": 30, "unit": "g" }
           ]
         }
       ],
       "instructions": [
-        "Cremar la manteca con el azúcar y la vainilla. Agregar el huevo y la leche ácida.",
-        "Incorporar los secos tamizados con espátula, y finalmente parte de los chips de chocolate.",
-        "Armar bolitas, aplanar levemente, colocar en una placa y llevar al frío (heladera o freezer).",
-        "Precalentar el horno a 200°C.",
-        "Sacar del frío, decorar la superficie con más chips y hornear por 15 minutos. Girar la bandeja y cocinar por otros 15 minutos aprox.",
-        "Retirar del horno y dejar enfriar en rejilla."
+        "En un bol mezclar todos los secos, y hacer un hueco en el medio, agregar el agua y el aceite y empezar a mezclar hasta formar una masa, volcar sobre la mesada y amasar hasta tener una masa lisa.",
+        "Estirar la masa bien finita en la mesada, se puede agregar semillas para que queden en la superficie, y cortar del tamaño y la forma deseada.",
+        "hornear en horno precalentado medio (250°) durante 10/15 minutos."
       ],
-      "notes": []
-    },
-    {
-      "id": "torta-80-golpes",
-      "name": "Torta 80 Golpes",
-      "yields": null,
-      "cookInfo": {
-        "time": "80 minutos aprox.",
-        "temperature": "200°C"
-      },
-      "ingredientGroups": [
-        {
-          "groupName": "Masa",
-          "ingredients": [
-            { "name": "Harina 0000", "quantity": 1, "unit": "kg" },
-            { "name": "Sal", "quantity": 1, "unit": "cucharadita" },
-            { "name": "Levadura", "quantity": 10, "unit": "g" },
-            { "name": "Huevo", "quantity": 2, "unit": "unidades" },
-            { "name": "Agua con leche tibia", "quantity": 600, "unit": "g" },
-            { "name": "Ralladura de limón y esencia de vainilla", "quantity": "c/n", "unit": "" },
-            { "name": "Aceite neutro", "quantity": 2, "unit": "cucharadas" },
-            { "name": "Manteca", "quantity": 20, "unit": "g" }
-          ]
-        },
-        {
-          "groupName": "Relleno (Crema)",
-          "ingredients": [
-            { "name": "Manteca blanda", "quantity": 180, "unit": "g" },
-            { "name": "Azúcar", "quantity": 200, "unit": "g" },
-            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" }
-          ]
-        },
-        {
-          "groupName": "Opcionales",
-          "ingredients": [
-            { "name": "Almendras", "quantity": "c/n", "unit": "" },
-            { "name": "Dulce de membrillo", "quantity": "c/n", "unit": "" }
-          ]
-        }
-      ],
-      "instructions": [
-        "Preparar la levadura con una cdita. de azúcar y un poco de agua tibia. Reservar.",
-        "En un bol o batidora, colocar la harina, sal y 100g de azúcar. Hacer un hueco y sumar la leche, esencias, aceite, huevo y la levadura activada.",
-        "Amasar hasta formar la masa. Agregar los 20g de manteca blanda e integrar.",
-        "Una vez que la masa esté lisa, golpearla 80 veces contra la mesada. Dejar reposar tapada por 1 hora.",
-        "Preparar la crema batiendo los 180g de manteca con los 200g de azúcar hasta cremar. Perfumar con vainilla.",
-        "Estirar la masa en un rectángulo de 1cm de grosor. Esparcir la crema, colocar trocitos de dulce de membrillo y almendras picadas.",
-        "Enrollar la masa, cerrar el borde y cortar bollitos de 6-8cm.",
-        "Colocar los rollitos en un molde redondo, separados, y dejar leudar tapados en un lugar cálido por una hora.",
-        "Hornear en horno precalentado a 200°C por unos 80 minutos."
-      ],
-      "notes": []
-    },
-    {
-      "id": "scons-de-queso",
-      "name": "Scons de Queso",
-      "yields": null,
-      "cookInfo": {
-        "time": "20 minutos aprox.",
-        "temperature": "200°C"
-      },
-      "ingredientGroups": [
-        {
-          "groupName": "General",
-          "ingredients": [
-            { "name": "Harina 0000", "quantity": 370, "unit": "g" },
-            { "name": "Azúcar", "quantity": 30, "unit": "g" },
-            { "name": "Sal", "quantity": "1/2", "unit": "cucharadita" },
-            { "name": "Polvo de hornear", "quantity": 20, "unit": "g" },
-            { "name": "Manteca fría", "quantity": 90, "unit": "g" },
-            { "name": "Leche ácida", "quantity": 200, "unit": "g" },
-            { "name": "Quesos duros o semiduros", "quantity": "250g o más", "unit": "" }
-          ]
-        }
-      ],
-      "instructions": [
-        "Arenar la harina, azúcar, sal, polvo de hornear y manteca fría.",
-        "Agregar la leche ácida y el queso elegido. Mezclar hasta formar una masa lisa.",
-        "Dejar descansar la masa 15 minutos.",
-        "Estirar del grosor deseado y cortar con la forma deseada.",
-        "Colocar en una placa y llevar al freezer por 10-15 minutos.",
-        "Precalentar el horno a 200°C.",
-        "Llevar del freezer directamente al horno y cocinar hasta dorar (aprox. 20 minutos)."
-      ],
-      "notes": []
+      "notes": [
+        "Opcional mix de semillas a gusto.",
+        "Opcional mix hierbas (perejil seco, orégano, tomillo)."
+      ]
     },
     {
       "id": "cremona-y-criollitos",
@@ -588,15 +244,59 @@
         }
       ],
       "instructions": [
-        "Masa: Activar la levadura. Mezclar harina y sal, agregar en el centro el agua, la grasa y la levadura. Amasar hasta obtener una masa lisa. Dejar reposar tapada por 40 minutos.",
-        "Empaste: Mezclar la grasa a temperatura ambiente con la harina. Estirar en forma de rectángulo entre papel film y enfriar.",
-        "Armado: Estirar la masa al doble del tamaño del empaste. Colocar el empaste en una mitad y cubrir con la otra. Presionar para sacar el aire.",
-        "Hojaldrado: Estirar a lo largo y doblar en 3 (vuelta simple). Estirar de nuevo y doblar en 4 (vuelta doble). Descansar en freezer 15 min.",
-        "Repetir el proceso (vuelta simple y doble) y descansar en freezer 15 min. Finalmente, dar una última vuelta simple.",
-        "Cremona: Estirar un rectángulo de 2cm de grosor. Realizar cortes cada 3cm sin llegar al otro extremo. Darle forma de cremona y dejar descansar 30 min. Hornear a 220°C por 30 min aprox.",
-        "Criollitos: Con el resto de la masa, cortar criollitos, dejar descansar 20 min. Hornear a 220°C por 20 min aprox, dándolos vuelta a mitad de cocción."
+        "Masa(se puede hacer en batidora con amasador): Preparar la levadura con media cdita de azúcar y un poco de agua, mezclar bien y reservar, colocar la harina y la sal en un bol, en el centro agregar el agua la grasa y la levadura espumada, mezclar hasta que se integre, y comenzar a amasar hasta que quede lisa, dejar reposar tapada, un mínimo de 40 minutos a temperatura ambiente.",
+        "Empaste: con un tenedor pisar la grasa a temperatura ambiente y agregar la harina y mezclar, en papel film (o entre dos separadores) volcar el empaste y estirar un rectángulo, envolver bien y llevar a heladera o freezer.",
+        "Armado masa: Estirar la masa del doble de tamaño que el empaste, colocar el empaste en una mitad y tapar con la otra parte de la masa, así queda el empaste en el medio de la masa, presionar para sacar el aire.",
+        "Estirar a lo largo, y doblar en 3 partes (se llama vuelta simple), estirar nuevamente y doblar en 4 partes, llevando los extremos al centro (se llama vuelta doble).",
+        "Llevar a descansar en freezer 15 minutos, retirar del frío y repetir el procedimiento.",
+        "Estirar y hacer la última vuelta simple. Ahora la masa está lista.",
+        "Con la masa preparada estirar un rectángulo largo de 2 cm de grosor, cortar los bordes con un cuchillo afilado o cutter, y dividir la masa, cortar una tira de masa a lo largo, y realizar cada 3 cm un corte que no llegue al otro extremo de la masa, darle forma de cremona dejando los cuadraditos para afuera, colocar en una placa y tapar y dejar descansar una media hora, luego cocinar a horno precalentado 220 por media hora, a media cocción girar la placa para emparejar.",
+        "Con el resto de la masa cortar criollitos del tamaño deseado, colocar en una placa y dejar descansar unos 20 minutos, mientras se precalienta el horno a 220 (horno medio). y cocinar durante 10 minutos, dar vuelta la placa para emparejar, y cocinar otros 10 minutos o hasta que se dore.",
+        "Cocinar luego la cremona, 15 minutos, girar y cocinar otros 15 minutos, o hasta que se dore."
       ],
       "notes": []
+    },
+    {
+      "id": "cuadraditos-de-limon",
+      "name": "Cuadraditos de Limón",
+      "yields": "Molde cuadrado de 25cm",
+      "cookInfo": {
+        "time": "15 minutos aprox. (masa)",
+        "temperature": "200°C"
+      },
+      "ingredientGroups": [
+        {
+          "groupName": "Masa",
+          "ingredients": [
+            { "name": "Manteca", "quantity": 100, "unit": "g" },
+            { "name": "Azúcar", "quantity": 200, "unit": "g" },
+            { "name": "Harina", "quantity": 300, "unit": "g" },
+            { "name": "Yema", "quantity": 1, "unit": "unidad" },
+            { "name": "Ralladura de limón", "quantity": "c/n", "unit": "" },
+            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" }
+          ]
+        },
+        {
+          "groupName": "Crema de limón",
+          "ingredients": [
+            { "name": "Azúcar", "quantity": 80, "unit": "g" },
+            { "name": "Jugo de un limón", "quantity": 1, "unit": "unidad" },
+            { "name": "Yemas", "quantity": 2, "unit": "unidades" },
+            { "name": "Leche", "quantity": 140, "unit": "g" },
+            { "name": "Maicena", "quantity": 30, "unit": "g" }
+          ]
+        }
+      ],
+      "instructions": [
+        "Masa: en la procesadora poner todos los ingredientes menos la yema hasta arenar, agregar la yema y la ralladura de limón y vainilla y procesar hasta unir, reservar en la heladera. o freezer, estirar la masa del tamaño del molde (cuadrado de 25cm), pinchar, colocar papel aluminio o manteca encima con peso (porotos) y llevar a horno 200° precalentado, por 15 minutos, sacar el papel y terminar de cocinar hasta dorar.",
+        "Crema de limón, calentar la leche con la mitad del azúcar, el jugo y ralladura de limón, aparte mezclar la maicena con el azúcar restante y las yemas. Unir las preparaciones en la olla y cocinar hasta cocer la fécula, retirar del fuego y en en caso de elegir, agregar la manteca en cubos y mezclar hasta homogeneizar.",
+        "Armado: en el mismo molde de cocción de la masa, cubrir el molde con film para mejor desmolde, colocar la masa, y por encima esparcir por toda la superficie la crema de limón tapar con el resto del film o bolsa, y llevar a la heladera, preferentemente de un dia para el otro.",
+        "Desmoldar y cortar cuadraditos del tamaño deseado, decorar con merengue o crema chantilly."
+      ],
+      "notes": [
+        "Opcional: manteca para suavizar 30g",
+        "Opcional decoración: merengue suizo o crema chantilly"
+      ]
     },
     {
       "id": "muffins-de-puerro",
@@ -625,14 +325,352 @@
       ],
       "instructions": [
         "Precalentar el horno en mínimo.",
-        "Cortar el queso en cubitos.",
-        "Limpiar los puerros, cortarlos en brunoise y rehogarlos en una sartén con la manteca y una cucharada de aceite. Dejar enfriar.",
-        "En un bol, colocar la harina con el polvo de hornear. Incorporar los huevos, el aceite y la cerveza. Mezclar.",
-        "Condimentar y agregar los puerros fríos.",
-        "Verter la preparación en moldes de muffins y colocar un cubito de queso en el centro de cada uno.",
-        "Llevar a horno moderado (200°C) hasta que se doren (15-20 minutos)."
+        "Cortar el queso en cubitos o trocitos.",
+        "Limpiar los puerros, cortarlos bien chiquitos en brunoise, y rehogarlos en una sartén con la manteca y una cucharada de aceite.",
+        "Dejar enfriar.",
+        "En un bowl colocar la harina con el PpH, incorporar los huevos, el aceite y la cerveza, mezclar.",
+        "Condimentar, y agregar los puerros fríos, incorporar bien.",
+        "Verter la preparación en moldes de muffins de tamaño a gusto, y colocar un cubito de queso cuartirolo en el centro.",
+        "Llevar a horno 200° (moderado), hasta que se doren (15/20 minutos)."
       ],
       "notes": []
+    },
+    {
+      "id": "pan-pita-o-arabe",
+      "name": "Pan pita o árabe",
+      "yields": null,
+      "cookInfo": {
+        "time": null,
+        "temperature": null
+      },
+      "ingredientGroups": [
+        {
+          "groupName": "General",
+          "ingredients": [
+            { "name": "Harina 0000", "quantity": "c/n", "unit": "" },
+            { "name": "Levadura", "quantity": "c/n", "unit": "" },
+            { "name": "Agua", "quantity": "c/n", "unit": "" },
+            { "name": "Sal", "quantity": "c/n", "unit": "" }
+          ]
+        }
+      ],
+      "instructions": [
+        "Preparar la levadura seca en una taza, con media cdita de azúcar y un poco de agua, mezclar bien y reservar.",
+        "Colocar en un bol la harina y la sal, incorporar el agua, y la levadura preparada, y comenzar a amasar hasta formar una masa lisa."
+      ],
+      "notes": [
+        "La receta original no especifica cantidades ni tiempo/temperatura de cocción."
+      ]
+    },
+    {
+      "id": "pasta-frola",
+      "name": "Pasta Frola",
+      "yields": null,
+      "cookInfo": {
+        "time": "60 minutos aproximadamente",
+        "temperature": "180°C"
+      },
+      "ingredientGroups": [
+        {
+          "groupName": "Masa",
+          "ingredients": [
+            { "name": "Manteca", "quantity": 200, "unit": "g" },
+            { "name": "Azúcar", "quantity": 180, "unit": "g" },
+            { "name": "Huevos", "quantity": 2, "unit": "unidades" },
+            { "name": "Harina Leudante", "quantity": 450, "unit": "g" },
+            { "name": "Sal", "quantity": "1 pizca", "unit": "" },
+            { "name": "Esencia de vainilla y ralladura de limón", "quantity": "c/n", "unit": "" }
+          ]
+        },
+        {
+          "groupName": "Relleno",
+          "ingredients": [
+            { "name": "Dulce de membrillo", "quantity": 300, "unit": "g" },
+            { "name": "Oporto", "quantity": "c/n", "unit": "" }
+          ]
+        }
+      ],
+      "instructions": [
+        "Batir la manteca con el azúcar hasta blanquear, agregar huevos, ralladura, esencia.",
+        "Agregar la harina de apoco tamizada, e incorporar con espátula, terminar en la mesada uniendo la masa con cornet, sin usar las manos para no dar calor a la masa.",
+        "Dejar reposar en la heladera tapada durante al menos 1hs.",
+        "Dulce de membrillo, calentarlo en una ollita con el oporto para ablandarlo e integrarlo bien, dejar enfriar unos minutos.",
+        "Armado: dividir la masa 80/20 y fonzar el molde de tarta elegido con la parte más grande, esparcir el dulce uniformemente, con un trozo de masa sobrante realizar tiritas, y colocarlas por la superficie de la tarta haciendo el clásico enrejado de la pasta frola.",
+        "Hornear 60 minutos aproximadamente, en horno 180° (mínimo precalentado)."
+      ],
+      "notes": []
+    },
+    {
+      "id": "scons-de-queso",
+      "name": "Scons de queso",
+      "yields": null,
+      "cookInfo": {
+        "time": "20 minutos aprox.",
+        "temperature": "200°C"
+      },
+      "ingredientGroups": [
+        {
+          "groupName": "General",
+          "ingredients": [
+            { "name": "Harina 0000", "quantity": 370, "unit": "g" },
+            { "name": "Azúcar", "quantity": 30, "unit": "g" },
+            { "name": "Sal", "quantity": "1/2", "unit": "cdita" },
+            { "name": "Polvo de hornear", "quantity": 20, "unit": "g" },
+            { "name": "Manteca fría", "quantity": 90, "unit": "g" },
+            { "name": "Leche ácida", "quantity": 200, "unit": "g" },
+            { "name": "Quesos varios duros o semiduros", "quantity": "250g o más", "unit": "" }
+          ]
+        }
+      ],
+      "instructions": [
+        "Masa (puede hacerse en batidora con lira amasadora): Arenar los primeros 5 ingredientes, una vez realizado, agregar la leche ácida y el queso elegido mezclar hasta formar una masa lisa. (Si es en batidora, cambiar lira por amasador). Dejar descansar la masa 15 minutos aproximadamente.",
+        "Estirar del grosor deseado, y cortar con formas a gusto, colocar en una placa con antiadherente o papel manteca, llevar al freezer por 10 a 15 minutos, precalentar el horno a 200° y llevar del freezer al horno, y cocinar hasta dorar, aproximadamente 20 minutos."
+      ],
+      "notes": []
+    },
+    {
+      "id": "tarta-de-ciruelas",
+      "name": "Tarta de Ciruelas",
+      "yields": null,
+      "cookInfo": {
+        "time": "50-60 minutos",
+        "temperature": "180-200°C"
+      },
+      "ingredientGroups": [
+        {
+          "groupName": "Masa",
+          "ingredients": [
+            { "name": "Manteca blanca", "quantity": 200, "unit": "g" },
+            { "name": "Azúcar", "quantity": 200, "unit": "g" },
+            { "name": "Huevos", "quantity": 4, "unit": "unidades" },
+            { "name": "Harina Leudante", "quantity": 250, "unit": "g" }
+          ]
+        },
+        {
+          "groupName": "Relleno",
+          "ingredients": [
+            { "name": "Ciruelas", "quantity": 500, "unit": "g" }
+          ]
+        },
+        {
+          "groupName": "Crumble",
+          "ingredients": [
+            { "name": "Azúcar", "quantity": "c/n", "unit": "cucharadas" },
+            { "name": "Manteca Fría", "quantity": "40-50", "unit": "g" },
+            { "name": "Harina", "quantity": "3/4", "unit": "cucharadas" },
+            { "name": "Fruto seco", "quantity": "a gusto", "unit": "" }
+          ]
+        }
+      ],
+      "instructions": [
+        "Ciruelas: cortar en gajos, y saltear en una sarten con unas gotitas de jugo de limpn, y una pizca de azúcar. Reservar.",
+        "Crumble: realizar un arenado con los ingredientes, con tenedor, espátula o en procesadora.",
+        "Masa: Batir los ingredientes, primero manteca azúcar hasta homogeneizar, agregar los huevos de a uno, y finalmente la harina tamizada de a partes, seguir batiendo hasta formar una masa homogénea un poco más densa que la del bizcochuelo común.",
+        "En el molde elegido, enmantecado o con papel manteca, volcar toda la masa y distribuirla pareja, por encima agregar las ciruelas, y por último cubrir toda la superficie con la crumble.",
+        "Llevar a horno mínimo (180/200°) precalentado, 50/60 minutos aproximadamente."
+      ],
+      "notes": []
+    },
+    {
+      "id": "tarta-de-dulce-de-leche-y-coco",
+      "name": "Tarta de Dulce de Leche y Coco",
+      "yields": null,
+      "cookInfo": {
+        "time": "30-40 minutos",
+        "temperature": "200°C"
+      },
+      "ingredientGroups": [
+        {
+          "groupName": "Masa",
+          "ingredients": [
+            { "name": "Manteca", "quantity": 150, "unit": "g" },
+            { "name": "Azucar impalpable", "quantity": 100, "unit": "g" },
+            { "name": "Leche", "quantity": 50, "unit": "g" },
+            { "name": "Huevos", "quantity": 2, "unit": "unidades" },
+            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" },
+            { "name": "Sal", "quantity": "1 pizca", "unit": "" }
+          ]
+        },
+        {
+          "groupName": "Relleno",
+          "ingredients": [
+            { "name": "Dulce de leche", "quantity": 250, "unit": "g" }
+          ]
+        },
+        {
+          "groupName": "Cocada",
+          "ingredients": [
+            { "name": "Coco", "quantity": "300/400", "unit": "g" },
+            { "name": "Huevo", "quantity": 1, "unit": "unidad" },
+            { "name": "Azúcar", "quantity": 100, "unit": "g" },
+            { "name": "Crema de leche", "quantity": 50, "unit": "g" }
+          ]
+        }
+      ],
+      "instructions": [
+        "Masa: Cremar la manteca con el azúcar y la sal agregar el huevo y la leche, mezclar enérgicamente hasta integrar, de a poco integrar la harina tamizada, mezclando con espátula y agregar la esencia. Unir la masa con espátula o cornet sin amasar, dejar reposar en la heladera tapada con bolsa o film durante, al menos, una hora.",
+        "Cocada: En un bol volcar el coco y el azúcar, mezclar, hacer un hueco en el centro y agregar el huevo y la crema de leche, mezclar hasta que quede integrado.",
+        "Armado: fonzar la base de una tartera con la masa pinchar con tenedor, cocinar hasta blanquear en horno mínimo con papel aluminio o manteca y peso arriba, retirar el peso y el papel, esparcir el dulce de leche, por encima volcar la cocada y desparramarla, o sí se prefiere poner la cocada en una manga de repostería y hacerle copitos por encima.",
+        "Cocinar en horno precalentado 200° por 30/40 minutos."
+      ],
+      "notes": []
+    },
+    {
+      "id": "tarta-de-manzana",
+      "name": "Tarta de manzana",
+      "yields": null,
+      "cookInfo": {
+        "time": "40-50 minutos",
+        "temperature": "200°C"
+      },
+      "ingredientGroups": [
+        {
+          "groupName": "General",
+          "ingredients": [
+            { "name": "Manteca", "quantity": 120, "unit": "g" },
+            { "name": "Azúcar", "quantity": 120, "unit": "g" },
+            { "name": "Harina leudante", "quantity": 240, "unit": "g" },
+            { "name": "Huevos", "quantity": 2, "unit": "unidades" },
+            { "name": "Leche ácida", "quantity": 250, "unit": "g" },
+            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" },
+            { "name": "Manzanas", "quantity": "4/5", "unit": "unidades" },
+            { "name": "Canela", "quantity": "c/n", "unit": "" }
+          ]
+        }
+      ],
+      "instructions": [
+        "Granulado: mezclar con tenedor, cornet, o en procesadora, la manteca fría, el azúcar y la harina hasta formar el granulado, y dividirlo 60/40.",
+        "Manzanas: en una sartén dorar las manzanas cortadas a gusto con un una cucharada de azúcar y canela a gusto.",
+        "Batido: Batir (puede ser a mano) los huevos con la leche y la esencia.",
+        "Armado: con la parte más grande del granulado forrar la tartera (cerrada no desmontable)y presionar, encima acomodar las manzanas y volcar sobre ellas el batido líquido, por encima esparcir el resto del granulado sin aplastar.",
+        "Cocción: colocar la tartera en una placa y llevar a horno 200° precalentado, por 40/50 minutos."
+      ],
+      "notes": []
+    },
+    {
+      "id": "tarta-de-ricota",
+      "name": "Tarta de Ricota",
+      "yields": null,
+      "cookInfo": {
+        "time": "60/80 minutos",
+        "temperature": "180°"
+      },
+      "ingredientGroups": [
+        {
+          "groupName": "Masa",
+          "ingredients": [
+            { "name": "Manteca", "quantity": 200, "unit": "g" },
+            { "name": "Azucar impalpable", "quantity": 140, "unit": "g" },
+            { "name": "Harina leudante", "quantity": 400, "unit": "g" },
+            { "name": "Huevos", "quantity": 2, "unit": "unidades" },
+            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" }
+          ]
+        },
+        {
+          "groupName": "Relleno",
+          "ingredients": [
+            { "name": "Ricota", "quantity": 500, "unit": "g" },
+            { "name": "Azúcar", "quantity": 200, "unit": "g" },
+            { "name": "Ralladura de limón", "quantity": "c/n", "unit": "" },
+            { "name": "Huevos", "quantity": 2, "unit": "unidades" },
+            { "name": "Fécula de maíz", "quantity": 50, "unit": "g" }
+          ]
+        }
+      ],
+      "instructions": [
+        "Realizar un 'arenado', con la harina, el azúcar y la manteca bien fría, se puede hacer en la procesadora o en un bol con tenedor y espátula, para no dar calor con las manos.",
+        "Agregar al arenado los huevos y la vainilla hasta formar la masa sin amasar con las manos.",
+        "Dejar reposar en la heladera al menos 30 minutos.",
+        "Para el relleno: en la procesadora o bol, mezclar/batir la ricota con la ralladura de limón, el azúcar y los huevos, y después agregar la maicena desleída con dos cucharadas de leche.",
+        "Retirar la masa de la heladera, cortar 60/40, con la parte más grande fonzar la parte de debajo de la tartera, volcar el relleno y tapar con la masa restante, llevar a horno 180° (mínimo precalentado) por 60/80 minutos.",
+        "Dejar enfriar en el horno, desmoldar y espolvorear con azúcar impalpable."
+      ],
+      "notes": [
+        "Para el relleno, usar preferentemente ricota cremosa."
+      ]
+    },
+    {
+      "id": "torta-80-golpes",
+      "name": "Torta 80 golpes",
+      "yields": null,
+      "cookInfo": {
+        "time": "80 minutos aproximadamente",
+        "temperature": "200°"
+      },
+      "ingredientGroups": [
+        {
+          "groupName": "Masa",
+          "ingredients": [
+            { "name": "Harina 0000", "quantity": 1, "unit": "Kilo" },
+            { "name": "Sal", "quantity": 1, "unit": "cdita" },
+            { "name": "Levadura", "quantity": 10, "unit": "g" },
+            { "name": "Huevo", "quantity": 2, "unit": "unidades" },
+            { "name": "Agua con leche tibia", "quantity": 600, "unit": "g" },
+            { "name": "Ralladura de limón y esencia de vainilla", "quantity": "c/n", "unit": "" },
+            { "name": "Aceite neutro", "quantity": 2, "unit": "cdas" },
+            { "name": "Manteca", "quantity": 20, "unit": "g" }
+          ]
+        },
+        {
+          "groupName": "Relleno",
+          "ingredients": [
+            { "name": "Manteca", "quantity": 180, "unit": "g" },
+            { "name": "Azúcar", "quantity": 200, "unit": "g" },
+            { "name": "Esencia de vainilla", "quantity": "c/n", "unit": "" },
+            { "name": "Almendras", "quantity": "c/n", "unit": "" },
+            { "name": "Dulce de membrillo", "quantity": "c/n", "unit": "" }
+          ]
+        }
+      ],
+      "instructions": [
+        "Preparar la levadura en una taza con una cdita de azúcar y un poquito de agua a temperatura ambiente, mezclar bien y reservar.",
+        "En batidora planetaria con amasador, o en un bol con la cuchara de madera, colocar la harina la sal y 100g de azúcar, hacer un hueco en el medio y sumar la leche la esencia de vainilla y ralladura de limón, el aceite el huevo y la levadura preparada.",
+        "Llevar a amasar, o mezclar con la espátula hasta formar la masa, para finalizar agregar 1 cda o 20g de la manteca blanda e integrar a la masa amasando, una vez que la masa esté lisa, empezar a darle los 80 golpes contra la mesa o mesada. y dejar reposar por a hora, tapada con bolsa y repasador.",
+        "Preparar la manteca blanda (180g) batiendo con el azúcar (200g) hasta cremar, perfumar con vainilla. Picar las almendras a gusto.",
+        "Estirar la masa en un rectángulo, de un grosor de 1cm aprox, esparcir la crema por todo el rectángulo, colocar cucharaditas de dulce de membrillo en distintos lados, y por encima las almendras picadas por todo el rectángulo.",
+        "Comenzar a enrollar la masa, juntar pellizcando el cierre, y cortar bollitos de unos 6/8cm de largo.",
+        "El molde redondo colocar los rollitos con poco de separación para que leuden, y tapar los moldes, dejar leudar en lugar cálido por una hora, mientras se precalienta el horno 200°.",
+        "Destapar, colocar los moldes en una placa y llevar al horno por unos 80 minutos aproximadamente.",
+        "Sacar del horno, dejar enfriar y desmoldar."
+      ],
+      "notes": []
+    },
+    {
+      "id": "torta-humeda-de-chocolate",
+      "name": "Torta Húmeda de Chocolate",
+      "yields": null,
+      "cookInfo": {
+        "time": "50 minutos",
+        "temperature": "180°C"
+      },
+      "ingredientGroups": [
+        {
+          "groupName": "General",
+          "ingredients": [
+            { "name": "Harina 0000", "quantity": 230, "unit": "gr" },
+            { "name": "Azúcar blanca común", "quantity": 200, "unit": "gr" },
+            { "name": "Cacao amargo", "quantity": 60, "unit": "gr" },
+            { "name": "Bicarbonato de sodio", "quantity": "1/2", "unit": "cdita" },
+            { "name": "Polvo para hornear", "quantity": 1, "unit": "cdita" },
+            { "name": "Sal", "quantity": 1, "unit": "cdita" },
+            { "name": "Café", "quantity": 125, "unit": "ml/g" },
+            { "name": "Leche", "quantity": 120, "unit": "ml/g" },
+            { "name": "Huevos", "quantity": 3, "unit": "unidades" },
+            { "name": "Aceite neutro", "quantity": 100, "unit": "g" },
+            { "name": "Esencia de vainilla", "quantity": 1, "unit": "cdita" }
+          ]
+        }
+      ],
+      "instructions": [
+        "Tamizar la harina, el azúcar blanca, el cacao amargo, el bicarbonato de sodio y la sal en un bol, hacer un hueco en el medio para incorporar los líquidos y reservar.",
+        "Aparte, colocar los líquidos: el café, la leche, los huevos y el aceite (o manteca derretida), mezclar enérgicamente con batidor.",
+        "Realizar un hueco en medio de los secos, e incorporar los líquidos, integrar con ayuda de espátula o batidor de manos para evitar grumos.",
+        "Volcar la preparación en el molde, o moldes.",
+        "Cocinar en horno precalentado 180°, por 50 minutos o hasta que al pincharlo con un palito éste salga limpio."
+      ],
+      "notes": [
+        "Se puede reemplazar los 100g de aceite neutro por 120g de manteca pomada."
+      ]
     }
   ]
 }
